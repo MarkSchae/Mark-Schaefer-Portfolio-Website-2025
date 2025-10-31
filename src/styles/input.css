@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+.section-card {
+  @apply min-h-screen max-h-screen p-8 bg-[#14213D] border-2 border-amber-300 rounded-2xl shadow-2xl shadow-black;
+}
+
+.body-setup {
+  @apply flex flex-col gap-4 m-0 p-5 font-serif bg-stone-600 text-[#CCC9DC] scroll-smooth text-[16px];
+}
+
+.btn-default {
+  @apply cursor-pointer bg-[#bbc75f] rounded-4xl text-white;
+}
+
+.nav-bar-elements {
+  @apply h-8 border-l-2 border-dotted border-black ml-[50%];
+}
+
+.gradient-bg {
+  background: linear-gradient(to right, #000000, #2a2a2a);
+  color: #f3f4f6;
+}
+
+/* Webkit is a engine specific experimental apply call */
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track (background of scrollbar) */
+::-webkit-scrollbar-track {
+  background: #1e1e1e; /* dark theme example */
+  border-radius: 10px;
+}
+
+/* Thumb (the draggable handle) */
+::-webkit-scrollbar-thumb {
+  background: #fbbf24; /* amber-400 */
+  border-radius: 10px;
+}
+
+/* Hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}

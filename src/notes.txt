@@ -1,0 +1,30 @@
+Drop down nav bar for mobile
+Do not forget to gitignore the node_modules
+
+I want to add a window into my more fun/hobby side when clicked
+
+Which projects to polish:
+    Task manager/remember app
+    The django typing game
+    The e commerce site
+    Maybe the social media one 
+    Create a new project with django/python back and react/js front and do the Figma design for this project 
+    Using viewport units is problematic 
+    Naming conventions are not good enough
+
+UNFORTUNATLEY MOST OF THIS WILL NEED TO BE REFACTORED. The beauty of learning.
+
+Need to add a href to a page about my hobbies etc
+
+Change color theme and photos 
+    Host projects and link to those
+    A seperate get to know me better page 
+    General cleaning up 
+    But main focus is to my skills and projects 
+    Need to add/change the page that highlights my skills in a effective manner
+        What can i bring to the table specifically
+        Maybe part of the get to know me more would be books I am reading
+            Technologies I am intersted in and currently learning more about 
+            Etc about me 
+Add some sort of hand designed Figma 
+Also need to add a project taken from dirty to clean arch 
