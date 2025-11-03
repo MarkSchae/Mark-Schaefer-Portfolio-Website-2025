@@ -1,8 +1,8 @@
-## Portfolio Project – CDV05
+## Portfolio
 
 ### Overview
 
-This project is my **personal portfolio website**, built to showcase my web development projects, skills, and background in a clean, interactive, and responsive way. It demonstrates proficiency in **HTML**, **CSS (Tailwind)**, and **JavaScript**, as well as an understanding of responsive design, interactivity, and user experience principles.
+This is my **personal portfolio website**, built to showcase my web development projects, skills, and background in a clean, interactive, and responsive way. It demonstrates proficiency in **HTML**, **CSS (Tailwind)**, and **JavaScript**, as well as an understanding of responsive design, interactivity, and user experience principles.
 
 ---
 
@@ -29,7 +29,7 @@ This project is my **personal portfolio website**, built to showcase my web deve
 1. Download or clone the repository:
 
    ```bash
-   git clone https://github.com/MarkSchae/MARSCH25097_PTO2501_GroupA_MarkSchaefer_CDV05.git
+   git clone https://github.com/MarkSchae/Mark-Schaefer-Portfolio-Website-2025.git 
    ```
 2. Open the project folder.
 3. Open `index.html` in your browser.
