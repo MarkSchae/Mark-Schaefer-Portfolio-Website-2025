@@ -12,7 +12,7 @@
     <section id="front-page" class="contents">
         <header id="home" class="section-card">
             <!-- Nav bars, headings at the top etc -->
-            <div class="flex flex-col rounded-4xl bg-amber-500 fixed top-[30%] right-5 sm:right-8 w-fit p-1 sm:p-2">
+            <div class="flex flex-col rounded-4xl bg-[#0C1821] fixed top-[30%] right-5 sm:right-8 w-fit p-1 sm:p-2">
                 <a href="#home"><div>🏠</div></a>
                 <div class="nav-bar-elements"></div>
                 <a href="#about-me-page"><div>🗣️</div></a>
@@ -26,7 +26,7 @@
                 <a href="#contact-me-page"><div>📡</div></a>
             </div>
             <!-- Intro and profile img -->
-            <div class="flex flex-col gap-20 sm:flex-row border-2 rounded-2xl shadow-2xl shadow-white gradient-bg">
+            <div class="flex flex-col gap-20 sm:flex-row">
                 <div class="flex flex-col sm:w-1/2 justify-center items-center gap-2">
                     <h2 class="sm:text-4xl">Hi There</h2>
                     <h1 class="sm:text-6xl">I'm Mark Schaefer</h1>
@@ -37,11 +37,11 @@
                         I have experience building responsive interfaces and robust backends. 
                         I have deployed a number of full-stack projects.
                     </p>
-                    <button id="bio-button" class="btn-default p-2 text-[18px] mt-5 sm:p-0.5 sm:w-3xs sm:h-20 sm:mt-28">More about me</button>
+                    <button id="bio-button" class="btn-default image-hover p-2 text-[18px] mt-5 sm:p-0.5 sm:w-3xs sm:h-20 sm:mt-28">More about me</button>
                 </div>
 
                 <div class="sm:w-1/2 sm:h-[90vh] h-[50vh] flex justify-center">
-                    <img class="max-w-full max-h-full object-contain rounded-4xl" src="./src/images/profile-pic.jpg" alt="Mark Schaefer Profile Pic">
+                    <img class="max-w-full max-h-full object-contain rounded-4xl shadow-2xl shadow-[#cac5e1]" src="./src/images/profile-pic.jpg" alt="Mark Schaefer Profile Pic">
                 </div>
             </div>
         </header>
@@ -49,13 +49,13 @@
     
     <section id="about-me-page" class="section-card flex flex-row gap-20">
         <!-- The left hand sidebar -->
-        <header class="hidden sm:flex flex-col gap-10 bg-amber-400 p-1.5 rounded-4xl">
+        <header class="hidden sm:flex flex-col gap-10 bg-[#0C1821] p-1.5 rounded-4xl">
             <!-- smaller profile img -->
             <div class="sm:h-[30vh] h-[50vh] flex justify-center items-center">
                 <img class="max-w-full max-h-full w-25 object-contain rounded-4xl" src="./src/images/profile-pic.jpg" alt="Mark Schaefer Profile Pic">
             </div>
             <!-- Navbar in a column style -->
-            <nav class="flex flex-col justify-center items-center gap-6 text-black">
+            <nav class="flex flex-col justify-center items-center gap-6">
                 <a href="#home"><div>Home</div></a>
                 <a href="#about-me-page"><div>About Me</div></a>
                 <a href="#resume-page"><div>Resume</div></a>
@@ -69,7 +69,7 @@
             <!-- Main content for the page -->
              <div class="xl:text-9xl border-2 border-dotted p-2 border-black">ABOUT ME</div>
              <div class="flex flex-col items-center gap-1">
-                <p id="profile-bio" class="hidden sm:line-clamp-none sm:max-w-[650px] sm:block text-black"> 
+                <p id="profile-bio" class="hidden sm:line-clamp-none sm:max-w-[650px] sm:block"> 
                     Hi, I’m Mark Schaefer, a passionate full-stack developer specializing in JavaScript, Python, and Django.
                     I create web applications that are clean, functional, and user-friendly. 
                     I have experience building responsive interfaces, robust backends. 
@@ -78,7 +78,7 @@
              </div>
 
              <div class="flex flex-col xl:flex-row gap-3">
-                <div class="xl:w-1/2 h-[30vh] xl:h-[50vh] grid grid-cols-2 grid-rows-2 justify-items-center items-center bg-black text-yellow-400 shadow-2xl shadow-black xl:text-4xl">
+                <div class="xl:w-1/2 h-[30vh] xl:h-[50vh] grid grid-cols-2 grid-rows-2 justify-items-center items-center bg-[#0C1821] shadow-2xl shadow-black xl:text-4xl border-4 border-[#CCC9DC]">
                     <div>Experience</div>
                     <div>Projects Done</div>
                     <div>Happy Clients</div>
@@ -87,26 +87,26 @@
 
                 <div class="xl:w-1/2 xl:h-[50vh] grid grid-cols-[auto,1fr] grid-rows-[repeat(4,auto)] gap-8 sm:gap-3">
                     <div class="col-span-2 xl:text-6xl">What I do?</div>
-                    <img data-reveal-id="1" class="object-contain w-10 xl:w-20 about-me-images" src="./src/images/laptop-sketch.jpg" alt="Picture of a laptop">
+                    <img data-reveal-id="1" class="object-contain w-10 xl:w-40 about-me-images" src="./src/images/front-end-logo-new.png" alt="My front-end Logo design">
                     <div class="pr-5">
-                        <span data-reveal-id="1" id="span-web-dev" class="text-black font-bold about-me-page-span">Web Development –</span>
+                        <span data-reveal-id="1" id="span-web-dev" class= "font-bold about-me-page-span">Web Development –</span>
                         <div data-reveal-id="1" id="div-web-dev" class="hidden about-me-reveal-hidden-info xl:block">
                             I build responsive, interactive websites using HTML, CSS, JavaScript,
                             and modern frameworks to create seamless user experiences.
                         </div>
                     </div>
-                    <img data-reveal-id="2" class="object-contain w-10 xl:w-20 about-me-images" src="./src/images/server.png" alt="Picture of a server connecting the frontend to the backend">
+                    <img data-reveal-id="2" class="object-contain w-10 xl:w-40 about-me-images" src="./src/images/gears.png" alt="Picture of a server connecting the frontend to the backend">
                     <div class="pr-5">
-                        <span data-reveal-id="2" id="span-backend-dev" class="text-black font-bold about-me-page-span">Backend Development – </span>
+                        <span data-reveal-id="2" id="span-backend-dev" class= "font-bold about-me-page-span">Backend Development – </span>
                         <div data-reveal-id="2" id="div-backend-dev" class="hidden about-me-reveal-hidden-info xl:block">
                             I design and implement robust server-side applications
                             with Python, Django, Node.js, 
                             and SQL databases, making sure data flows securely and efficiently.
                         </div>
                     </div>
-                    <img data-reveal-id="3" class="object-contain w-10 xl:w-20 about-me-images" src="./src/images/pencil.png" alt="Picture of a pencil ready for design">
+                    <img data-reveal-id="3" class="object-contain w-10 xl:w-40 about-me-images" src="./src/images/bridge-figma.png" alt="Picture of a pencil ready for design">
                     <div class="pr-5">
-                        <span data-reveal-id="3" id="span-ui-figma-design" class="text-black font-bold about-me-page-span">UI/UX & Figma Design –</span>
+                        <span data-reveal-id="3" id="span-ui-figma-design" class= "font-bold about-me-page-span">UI/UX & Figma Design –</span>
                         <div data-reveal-id="3" id="div-ui-figma-design" class="hidden about-me-reveal-hidden-info xl:block">
                             I translate ideas into intuitive interfaces
                             and prototypes with Figma, 
@@ -119,10 +119,10 @@
     </section>
 
     <section id="resume-page" class="section-card">
-        <header class="flex justify-center text-black">
+        <header class="flex justify-center">
             <div class="text-3xl xl:text-7xl border-2 border-dotted p-2 border-black">RESUME</div>
         </header>
-        <div class="flex flex-col gap-2 sm:grid grid-cols-3 grid-rows-[auto_1fr_auto_1fr] sm:gap-5 text-black">
+        <div class="flex flex-col gap-2 sm:grid grid-cols-3 grid-rows-[auto_1fr_auto_1fr] sm:gap-5">
             <div class="col-span-3 text-2xl font-bold xl:text-4xl">Education</div>
             <div data-reveal-id="1" class="flex flex-col gap-1 p-2 resume-info-container">
                 <div class="resume-date" data-reveal-id="1">2025 - 2026</div>
@@ -177,7 +177,7 @@
         </div>
     </section>
 
-    <section id="portfolio-page" class="section-card text-black">
+    <section id="portfolio-page" class="section-card">
         <header>
             <div id="portfolio-container" class="xl:text-9xl border-2 border-dotted p-2 border-black flex justify-center">PORTFOLIO</div>
         </header>
@@ -225,19 +225,19 @@
         <!-- Contact details, links to github, linkdin, codewars etc -->
         <section id="contact-me-page" class="section-card flex flex-row gap-10">
             <!-- The left hand sidebar -->
-            <header class="hidden sm:flex flex-col gap-10 bg-amber-400 p-1.5 rounded-4xl">
+            <header class="hidden sm:flex flex-col gap-10 bg-[#0C1821] p-1.5 rounded-4xl">
                 <!-- smaller profile img -->
                 <div class="sm:h-[30vh] h-[50vh] flex justify-center items-center">
                     <img class="max-w-full max-h-full w-25 object-contain rounded-4xl" src="./src/images/profile-pic.jpg" alt="Mark Schaefer Profile Pic">
                 </div>
                 <!-- Navbar in a column style -->
-                <nav class="flex flex-col justify-center items-center gap-6 text-black">
-                    <a href="#home"><div>Home</div></a>
-                    <a href="#about-me-page"><div>About Me</div></a>
-                    <a href="#resume-page"><div>Resume</div></a>
-                    <a href="#portfolio-page"><div>Portfolio</div></a>
-                    <a href="#"><div>Testimonials</div></a>
-                    <a href="#contact-me-page"><div>Contacts</div></a>
+                <nav class="flex flex-col justify-center items-center gap-6">
+                    <a class="image-hover" href="#home"><div>Home</div></a>
+                    <a class="image-hover" href="#about-me-page"><div>About Me</div></a>
+                    <a class="image-hover" href="#resume-page"><div>Resume</div></a>
+                    <a class="image-hover" href="#portfolio-page"><div>Portfolio</div></a>
+                    <a class="image-hover" href="#"><div>Testimonials</div></a>
+                    <a class="image-hover" href="#contact-me-page"><div>Contacts</div></a>
                 </nav>
             </header>
 
@@ -245,24 +245,16 @@
                 <!-- Main content for the page -->
                 <div class="xl:text-9xl border-2 border-dotted p-2 border-black">CONTACT ME</div>
                 <div class="xl:text-5xl">FEEL FREE TO CONTACT ME</div>
-                <div>I look forwards to hearing from you.</div>
-                <div class="flex flex-row gap-5">
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <img class="sm:w-40 w-25 object-contain" src="./src/images/git-icon.png" alt="Laptop">
-                        <img class="sm:w-40 w-25 object-contain" src="./src/images/linkedin-icon.png" alt="Laptop">
-                        <div class="flex flex-col">
-                            <a href="https://github.com/MarkSchae" target="_blank">Github</a>
-                            <a href="https://www.linkedin.com/in/mark-schaefer-b5b35099/" target="_blank">Linkdin</a>
-                            <a href="mailto:mcschaefer26@gmail.com" target="_blank">Email</a>
-                        </div>
-                    </div>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <img class="sm:w-40 w-25 object-contain" src="./src/images/gmail_logo.png" alt="Phone">
-                        <div class="flex flex-col">
-                            <div>0735069384</div>
-                            <div>0735069384</div>
-                        </div>
-                    </div>
+                <div class="flex flex-col sm:flex-row items-end sm:flex-1 gap-50">
+                    <a class="rounded-full border-2 border-[#CCC9DC] image-hover overflow-hidden" href="https://github.com/MarkSchae" target="_blank">
+                        <img class="sm:w-20 h-10 w-25 object-contain" src="./src/images/git-icon.png" alt="GitHub Link">
+                    </a>
+                    <a class="rounded-full border-2 border-[#CCC9DC] image-hover overflow-hidden" href="https://www.linkedin.com/in/mark-schaefer-b5b35099/" target="_blank">
+                        <img class="sm:w-20 h-10 w-25 object-contain" src="./src/images/linkedin-icon.png" alt="Linkedin Link">
+                    </a>
+                    <a class="rounded-full border-2 border-[#CCC9DC] image-hover overflow-hidden" href="mailto:mcschaefer26@gmail.com" target="_blank">
+                        <img class="sm:w-20 h-10 w-25 object-contain" src="./src/images/gmail_logo.png" alt="Gmail Link">
+                    </a>
                 </div>
             </main>
         </section>

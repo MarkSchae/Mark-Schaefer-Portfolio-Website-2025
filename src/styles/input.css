@@ -1,24 +1,24 @@
 @import "tailwindcss";
 
 .section-card {
-  @apply min-h-screen max-h-screen p-8 bg-[#14213D] border-2 border-amber-300 rounded-2xl shadow-2xl shadow-black;
+  @apply min-h-screen max-h-screen p-8 bg-[#14213D] border-2 border-[#CCC9DC] rounded-2xl shadow-2xl shadow-black;
 }
 
 .body-setup {
-  @apply flex flex-col gap-4 m-0 p-5 font-serif bg-stone-600 text-[#CCC9DC] scroll-smooth text-[16px];
+  @apply flex flex-col gap-4 m-0 p-5 font-serif bg-[#0C1821] text-[#CCC9DC] scroll-smooth text-[16px];
 }
 
 .btn-default {
-  @apply cursor-pointer bg-[#bbc75f] rounded-4xl text-white;
+  @apply cursor-pointer bg-[#0C1821] rounded-4xl text-[#CCC9DC];
 }
 
 .nav-bar-elements {
-  @apply h-8 border-l-2 border-dotted border-black ml-[50%];
+  @apply h-8 border-l-2 border-dotted border-[#CCC9DC] ml-[50%];
 }
 
-.gradient-bg {
-  background: linear-gradient(to right, #000000, #2a2a2a);
-  color: #f3f4f6;
+.image-hover {
+  @apply transition-transform duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:shadow-black
+         hover:-translate-y-1;
 }
 
 /* Webkit is a engine specific experimental apply call */
@@ -35,11 +35,11 @@
 
 /* Thumb (the draggable handle) */
 ::-webkit-scrollbar-thumb {
-  background: #fbbf24; /* amber-400 */
+  background: #CCC9DC; /* amber-400 */
   border-radius: 10px;
 }
 
 /* Hover effect */
 ::-webkit-scrollbar-thumb:hover {
-  background: #f59e0b;
+  background: #14213D;
 }
