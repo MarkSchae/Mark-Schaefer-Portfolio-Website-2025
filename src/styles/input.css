@@ -21,6 +21,19 @@
          hover:-translate-y-1;
 }
 
+.portfolio-projects-container {
+  @apply flex flex-col gap-2 border-2 border-[#CCC9DC] rounded-2xl items-center overflow-hidden justify-between;
+}
+
+.portfolio-projects-container img {
+  @apply object-cover;
+}
+
+.art-images {
+  @apply rounded-full overflow-hidden transition-transform duration-300 ease-out transform hover:scale-200 hover:shadow-2xl hover:shadow-black
+         hover:-translate-y-1;
+}
+
 /* Webkit is a engine specific experimental apply call */
 /* Width of the scrollbar */
 ::-webkit-scrollbar {
