@@ -102,11 +102,13 @@ function customDropDown (containerId) {
         if(containerId === project.dataset.revealId) {
             if(project.classList.contains('hidden')) {
                 project.classList.toggle('hidden');
+                project.classList.toggle('sm:hidden');
             }   
         }
         if(containerId !== project.dataset.revealId) {
             if(!project.classList.contains('hidden')) {
                 project.classList.toggle('hidden');
+                project.classList.toggle('sm:hidden');
             }
         }
     });
@@ -126,7 +128,7 @@ function customDropDown (containerId) {
 
 portfolioHeading.addEventListener('click', () => {
     const screenSize = window.innerWidth;
-    if(screenSize <= 1024) {
+    if(screenSize <= 760) {
         dropdownMenuProjects.classList.toggle('hidden');
     }
 });
@@ -134,7 +136,7 @@ portfolioHeading.addEventListener('click', () => {
 portfolioProjectCategories.forEach(category => category.addEventListener('click', (event) => {
     const elementDataId = event.target.dataset.revealId;
     const screenSize = window.innerWidth;
-    if(screenSize <= 1024) {
+    if(screenSize <= 760) {
         customDropDown(elementDataId);
     }
     dropdownMenuProjects.classList.toggle('hidden');
@@ -143,9 +145,10 @@ portfolioProjectCategories.forEach(category => category.addEventListener('click'
 function portfolioProjectPageSwitch (containerId) {
     projectsContainers.forEach(project => {
         if(containerId === project.dataset.revealId) {
-            if(project.classList.contains('hidden') || project.classList.contains('!hidden')) {
+            if(project.classList.contains('hidden') || project.classList.contains('!hidden') || project.classList.contains('sm:hidden')) {
                 project.classList.remove('hidden');
                 project.classList.remove('!hidden');
+                project.classList.remove('sm:hidden');
             }
         }
         if(containerId !== project.dataset.revealId) {
@@ -159,7 +162,7 @@ function portfolioProjectPageSwitch (containerId) {
 dropdownItems.forEach(heading => heading.addEventListener('click', (event) => {
     const headingId = event.target.dataset.revealId;
     const screenSize = window.innerWidth;
-    if(screenSize > 1024) {
+    if(screenSize > 760) {
         portfolioProjectPageSwitch(headingId);
     }
 }));

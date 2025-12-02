@@ -36,7 +36,7 @@
                         I have experience building responsive interfaces and robust backends. 
                         I have deployed a number of full-stack projects.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-2.5">
+                    <div class="flex flex-col lg:flex-row gap-2.5">
                         <a href="https://docs.google.com/document/d/1uBh5Mkd2YWYMmM8h-sporL270rr6pJRp-Ty69202qjo/edit?usp=sharing" target="_blank">
                             <button id="bio-button" class="btn-default image-hover p-2 text-[18px] mt-5 sm:p-0.5 sm:w-3xs sm:h-20 sm:mt-28">
                                 More about me
@@ -50,8 +50,8 @@
                     </div>
                 </div>
 
-                <div class="sm:w-1/2 sm:h-[90vh] h-[50vh] flex justify-center">
-                    <img class="max-w-full max-h-full object-contain rounded-4xl shadow-2xl shadow-[#cac5e1]" src="./src/images/new-profile-pic.jpeg" alt="Mark Schaefer Profile Pic">
+                <div class="lg:w-1/2 lg:h-[90vh] h-[50vh] flex justify-center">
+                    <img class="max-w-full max-h-full object-cover rounded-4xl shadow-2xl shadow-[#cac5e1]" src="./src/images/new-profile-pic.jpeg" alt="Mark Schaefer Profile Pic">
                 </div>
             </div>
         </header>
@@ -196,7 +196,7 @@
             <ul class="text-gray-700">
                 <li data-reveal-id="1" class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Web-Dev</li>
                 <li data-reveal-id="2" class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Custom-Art</li>
-                <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Front-end-design</li>
+                <li data-reveal-id="3" class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Front-end-design</li>
                 <li data-reveal-id="4" class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Presenting</li>
             </ul>
         </div>
@@ -207,7 +207,7 @@
                 <div data-reveal-id="3" class="hidden sm:block portfolio-dropdown-items hover:cursor-pointer image-hover">FRONT-END DESIGN</div>
                 <div data-reveal-id="4" class="hidden sm:block portfolio-dropdown-items hover:cursor-pointer image-hover">PRESENTATION</div>
             </div>
-            <div id="web-dev-projects-container" data-reveal-id="1" class="flex flex-col sm:grid grid-cols-3 gap-5 w-max mx-auto projects-containers">
+            <div id="web-dev-projects-container" data-reveal-id="1" class="grid grid-cols-2 sm:grid-cols-3 gap-5 w-max mx-auto projects-containers">
                 <div class="portfolio-projects-container image-hover">
                     <a href="https://github.com/MarkSchae/TypingGame.git" target="_blank">
                         <img class="w-30 h-25 sm:w-40 sm:h-auto" src="./src/images/typing-game.png" alt="Typing game screenshot">
@@ -264,7 +264,7 @@
                 </div>
             </div>
 
-            <div data-reveal-id="2" class="hidden flex flex-col gap-5 w-max mx-auto projects-containers">
+            <div data-reveal-id="2" class="grid grid-cols-2 xl:flex flex-col gap-5 w-max mx-auto projects-containers sm:hidden hidden">
                 <div class="flex flex-col xl:flex-row gap-5 w-max mx-auto">
                     <img class="w-30 h-25 object-contain art-images sm:w-50 sm:h-30" src="./src/images/goblin2.jpg" alt="Cartoon goblin">
                     <img class="w-30 h-25 object-contain art-images sm:w-50 sm:h-30" src="./src/images/goblin3.jpg" alt="Cartoon goblin">
@@ -278,14 +278,14 @@
                 </div>
             </div>
 
-            <div data-reveal-id="3" class="hidden flex flex-col gap-5 w-max mx-auto projects-containers">
+            <div data-reveal-id="3" class="flex flex-col gap-5 w-[300px] sm:w-max mx-auto projects-containers sm:hidden hidden">
                 <div class="flex flex-col justify-center">
-                    <div class="text-4xl">Custom Ease-of-Use-Design</div>
-                    <img src="./src/images/front-end-logo-new.png" alt="Ease-of-Use-Design">
+                    <div class="sm:text-4xl text-xl">Custom Ease-of-Use-Design</div>
+                    <img class="w-[250px] sm:w-full object-contain" src="./src/images/front-end-logo-new.png" alt="Ease-of-Use-Design">
                 </div>
             </div>
 
-            <div data-reveal-id="4" class="hidden flex flex-col gap-5 w-max mx-auto projects-containers">
+            <div data-reveal-id="4" class="flex flex-col gap-5 w-max mx-auto projects-containers sm:hidden hidden">
                 <a href="https://youtu.be/YkSOzcaiqNc" target="_blank"><img class="w-30 h-25 object-contain sm:w-50 sm:h-auto image-hover portfolio-projects-container" src="./src/images/typing-game.png" alt="Typing game screenshot"></a>
                 <a href="https://drive.google.com/file/d/1joSTh_RR89_7WKPzKt_T2_nZf8rVrcWf/view" target="_blank"><img class="w-30 h-25 object-contain sm:w-50 image-hover portfolio-projects-container" src="./src/images/project-resume.png" alt="Resume project"></a>
                 <a href="https://drive.google.com/file/d/1ulDD3pHH0RkpHViLe_z7l4FzWmEzM6Na/view" target="_blank"><img class="w-30 h-25 object-contain sm:w-50 image-hover portfolio-projects-container" src="./src/images/kanban.png" alt="Kanban Board"></a>
