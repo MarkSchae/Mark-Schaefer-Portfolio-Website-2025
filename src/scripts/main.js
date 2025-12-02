@@ -160,9 +160,15 @@ function portfolioProjectPageSwitch (containerId) {
     });
 }
 
+function removeAllHeadingBg () {
+    dropdownItems.forEach(heading => heading.classList.remove('bg-[#0C1821]'));
+}
+
 dropdownItems.forEach(heading => heading.addEventListener('click', (event) => {
     const headingId = event.target.dataset.revealId;
     const screenSize = window.innerWidth;
+    removeAllHeadingBg();
+    event.target.classList.add('bg-[#0C1821]');
     if(screenSize > 760) {
         portfolioProjectPageSwitch(headingId);
     }
