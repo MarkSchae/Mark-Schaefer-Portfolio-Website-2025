@@ -149,6 +149,7 @@ function portfolioProjectPageSwitch (containerId) {
                 project.classList.remove('hidden');
                 project.classList.remove('!hidden');
                 project.classList.remove('sm:hidden');
+                project.classList.remove('xl:hidden');
             }
         }
         if(containerId !== project.dataset.revealId) {
