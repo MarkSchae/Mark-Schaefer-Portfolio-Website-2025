@@ -260,6 +260,9 @@
   .h-\[50vh\] {
     height: 50vh;
   }
+  .h-\[150px\] {
+    height: 150px;
+  }
   .max-h-full {
     max-height: 100%;
   }
@@ -587,9 +590,9 @@
       flex: 1;
     }
   }
-  .sm\:grid-cols-3 {
+  .sm\:grid-cols-4 {
     @media (width >= 40rem) {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
   .sm\:flex-row {
