@@ -15,7 +15,7 @@
             <div class="flex flex-col rounded-4xl bg-[#0C1821] fixed top-[30%] right-5 sm:right-8 w-fit p-1 sm:p-2">
                 <a href="#home"><div>🏠</div></a>
                 <div class="nav-bar-elements"></div>
-                <a class="hidden" href="#about-me-page"><div>🗣️</div></a>
+                <a href="#about-me-page"><div>🗣️</div></a>
                 <div class="nav-bar-elements"></div>
                 <a href="#resume-page"><div>💼</div></a>
                 <div class="nav-bar-elements"></div>
@@ -30,20 +30,20 @@
                 <div class="flex flex-col sm:w-1/2 justify-center items-center gap-2">
                     <h1 class="sm:text-6xl">Mark Schaefer</h1>
                     <h6 class="sm:text-7xl">Software Developer</h6>
-                    <p id="profile-bio" class="hidden sm:line-clamp-none sm:block mt-5 p-4"> 
+                    <p id="profile-bio" class="hidden sm:line-clamp-none sm:block mt-5 p-4 leading-normal text-[18px]"> 
                         Passionate full-stack developer specializing in JavaScript, React, Python, and Django.
                         I create web applications that are clean, functional, and user-friendly. 
                         I have experience building responsive interfaces and robust backends. 
                         I have deployed a number of full-stack projects.
                     </p>
                     <div class="flex flex-col lg:flex-row gap-2.5">
-                        <a href="https://docs.google.com/document/d/1uBh5Mkd2YWYMmM8h-sporL270rr6pJRp-Ty69202qjo/edit?usp=sharing" target="_blank">
-                            <button id="bio-button" class="btn-default image-hover p-2 text-[18px] mt-5 sm:p-0.5 sm:w-3xs sm:h-20 sm:mt-28">
+                        <a class="sm:mt-28" href="https://docs.google.com/document/d/1uBh5Mkd2YWYMmM8h-sporL270rr6pJRp-Ty69202qjo/edit?usp=sharing" target="_blank">
+                            <button id="bio-button" class="btn-default image-hover p-2 text-[18px] mt-5 sm:p-0.5 sm:w-3xs sm:h-20">
                                 More about me
                             </button>
                         </a>
-                        <a href="#portfolio-page">
-                            <button class="btn-default image-hover p-2 text-[18px] mt-5 sm:p-0.5 sm:w-3xs sm:h-20 sm:mt-28">
+                        <a class="sm:mt-28" href="#portfolio-page">
+                            <button class="btn-default image-hover p-2 text-[18px] mt-5 sm:p-0.5 sm:w-3xs sm:h-20">
                                 MY Projects
                             </button>
                         </a>
@@ -57,7 +57,7 @@
         </header>
     </section>
     
-    <section id="about-me-page" class="hidden section-card flex flex-row gap-20">
+    <section id="about-me-page" class="section-card flex flex-row gap-20">
         <!-- The left hand sidebar -->
         <header class="hidden sm:flex flex-col gap-10 bg-[#0C1821] p-1.5 rounded-4xl">
             <!-- smaller profile img -->
@@ -67,7 +67,7 @@
             <!-- Navbar in a column style -->
             <nav class="flex flex-col justify-center items-center gap-6">
                 <a href="#home"><div>Home</div></a>
-                <a class="hidden" href="#about-me-page"><div>About Me</div></a>
+                <a href="#about-me-page"><div>About Me</div></a>
                 <a href="#resume-page"><div>Resume</div></a>
                 <a href="#portfolio-page"><div>Portfolio</div></a>
                 <a class="hidden" href="#"><div>Testimonials</div></a>
@@ -75,7 +75,93 @@
             </nav>
         </header>
 
-        <main class="flex flex-col flex-1 items-center gap-3">
+        <div class="flex flex-col items-center gap-10 ml-auto mr-auto overflow-hidden">
+            <div class="text-3xl xl:text-9xl border-2 border-dotted p-2 border-black">MY JOURNEY</div>
+            <div id="journey-wrapper" class="flex flex-col gap-30 w-full">
+                <div class="text-card self-start relative hidden">
+                    <p class="line-clamp-1 text-card-p">
+                        I am a Full-Stack Python/Django and JavaScript/React Developer,
+                        designing APIs, shaping data models, implementing features specific to a given usecase.
+                    </p>
+                    <div class="absolute left-50 rotate-90 journey-feet" style="opacity: 0;">👣</div>
+                    <div class="absolute left-100 top-25 rotate-180 journey-feet" style="opacity: 0;">👣</div>
+                </div>
+                <div class="text-card self-center relative hidden">
+                    <p class="line-clamp-1 text-card-p">
+                        I have changed careers to fufill my desire to build lasting solutions and improve user experiences.
+                        I am developing strong interests in system optimisation and scalable application behaviour.
+                    </p>
+                    <div class="absolute left-50 rotate-90 journey-feet" style="opacity: 0;">👣</div>
+                    <div class="absolute left-100 top-25 rotate-180 journey-feet" style="opacity: 0;">👣</div>
+                </div>
+                <div class="text-card self-end relative hidden">
+                    <p class="line-clamp-1 text-card-p">
+                        I enjoy looking for creative ways to make data storage as well as data interactions smoother and quicker. 
+                        My ability to draw plays a meaningful role in my approach to UI design, allowing me to sketch ideas by hand and turn them into thoughtful and custom user experiences.
+                        My goal when starting each new project is to create data driven backend solutions delivered through intuative Api endpoints. 
+                        Present custom, responsive, interactive, and maintainable front-end components.
+                    </p>
+                    <div class="absolute top-15 right-25 rotate-270 journey-feet" style="opacity: 0;">👣</div>
+                    <div class="absolute top-15 right-100 rotate-270 journey-feet" style="opacity: 0;">👣</div>
+                    <div class="absolute right-200 top-25 rotate-180 journey-feet" style="opacity: 0;">👣</div>
+                </div>
+                <div class="text-card self-start relative hidden">
+                    <p class="line-clamp-1 text-card-p">
+                        Sports administrator and coach seeking a career change into software development, driven by a desire to build long-lasting solutions. 
+                        I began learning to code through online resources in my spare time, completing CS50 (C and Python), CSW web development (Flask and Django), and a software development bootcamp at CodeSpace Academy (Js and React).
+                        Building full-stack projects, such as my browser-based space-invaders game (Django server hosted on Supabase, Railway, and Netlify), has been particularly valuable and fulfilling.
+                    </p>
+                    <div class="absolute top-25 rotate-180 journey-feet" style="opacity: 0;">👣</div>
+                </div>
+                <div class="text-card self-start relative hidden">
+                    <p class="line-clamp-1 text-card-p">
+                        The CodeSpace program emphasizes designing scalable code and explaining design choices.
+                        Having over a decade of experience communicating complex strategies to athletes, parents, managers, and sponsors has translated seamlessly to explaining technical trade-offs and mentoring peers in the bootcamp.
+                        My experiences communicating complex sports strategy and technique in ways that each unique person can understand and benefit from has transferred as a soft skill aiding me in guiding others in the bootcamp.
+                    </p>
+                    <div class="absolute left-50 rotate-90 journey-feet" style="opacity: 0;">👣</div>
+                    <div class="absolute left-100 top-25 rotate-180 journey-feet" style="opacity: 0;">👣</div>
+                    <div class="absolute left-100 top-40 rotate-90 journey-feet" style="opacity: 0;">👣</div>
+                    <div class="absolute left-150 top-40 rotate-90 journey-feet" style="opacity: 0;">👣</div>
+                </div>
+                <div class="text-card self-end relative hidden">
+                    <p class="line-clamp-1 text-card-p">
+                        As head of rugby, cricket, and conditioning, I managed multiple nationwide events, oversaw external staff, and liaised with top sponsors.
+                        This leadership, organization, and stakeholder management experience equips me to contribute effectively in collaborative tech projects.
+                    </p>
+                    <div class="absolute top-25 rotate-270 journey-feet" style="opacity: 0;">👣</div>
+                    <div class="absolute right-100 top-25 rotate-180 journey-feet" style="opacity: 0;">👣</div>
+                </div>
+                <div class="text-card self-center relative hidden">
+                    <p class="line-clamp-1 text-card-p">
+                        I completed the bootcamp whilst working full-time, building projects, networking with peers, joined a hackathon. 
+                        Adaptable and solution-focused, I bring hands-on experience building interactive full-stack web applications with Python (Django) and JavaScript (React), designing real-time features, managing relational databases, and creating responsive interfaces.
+                    </p>
+                    <div class="absolute right-50 rotate-270 journey-feet" style="opacity: 0;">👣</div>
+                    <div class="absolute right-100 top-25 rotate-270 journey-feet" style="opacity: 0;">👣</div>
+                    <div class="absolute right-125 top-45 rotate-250 journey-feet" style="opacity: 0;">👣</div>
+                    <div class="absolute right-145 top-60 rotate-180 journey-feet" style="opacity: 0;">👣</div>
+                    <div class="absolute right-160 top-70 rotate-270 journey-feet" style="opacity: 0;">👣</div>
+                    <div class="absolute right-160 top-50 journey-feet" style="opacity: 0;">👣</div>
+                    <div class="absolute right-160 top-30 rotate-90 journey-feet" style="opacity: 0;">👣</div>
+                    <div class="absolute right-90 top-40 rotate-110 journey-feet" style="opacity: 0;">👣</div>
+                    <div class="absolute right-60 top-50 rotate-70 journey-feet" style="opacity: 0;">👣</div>
+                </div>
+                <div class="text-card self-center relative hidden">
+                    <p class="line-clamp-1 text-card-p">
+                        I aim to transfer my past professional experience and gained soft skills to a problem-solving junior full-stack software developer.
+                    <div class="absolute left-50 rotate-90 journey-feet" style="opacity: 0;">👣</div>
+                    </p>
+                    <div class="absolute left-100 top-25 rotate-180 journey-feet" style="opacity: 0;">👣</div>
+                    <div class="absolute left-50 top-30 rotate-270 journey-feet" style="opacity: 0;">👣</div>
+                </div>
+            </div>
+            <button id="journey-btn" class="image-hover rounded-2xl p-2 text-xl btn-default border-2 border-black shadow">
+                MY JOURNEY SO FAR
+            </button>
+        </div>
+
+        <main class="hidden flex flex-col flex-1 items-center gap-3">
             <!-- Main content for the page -->
              <div class="xl:text-9xl border-2 border-dotted p-2 border-black">ABOUT ME</div>
              <div class="flex flex-col items-center gap-1">
@@ -130,7 +216,7 @@
 
     <section id="resume-page" class="section-card">
         <header class="flex justify-center">
-            <div class="text-3xl xl:text-7xl border-2 border-dotted p-2 border-black">RESUME</div>
+            <div class="text-3xl xl:text-9xl border-2 border-dotted p-2 border-black">RESUME</div>
         </header>
         <div class="flex flex-col gap-2 sm:grid grid-cols-3 grid-rows-[auto_1fr_auto_1fr] sm:gap-5">
             <div class="col-span-3 text-2xl font-bold xl:text-4xl">Education</div>
@@ -207,7 +293,7 @@
                 <div data-reveal-id="3" class="hidden sm:block portfolio-dropdown-items hover:cursor-pointer image-hover rounded-2xl p-1">FRONT-END DESIGN</div>
                 <div data-reveal-id="4" class="hidden sm:block portfolio-dropdown-items hover:cursor-pointer image-hover rounded-2xl p-1">PRESENTATION</div>
             </div>
-            <div id="web-dev-projects-container" data-reveal-id="1" class="grid grid-cols-2 sm:grid-cols-4 gap-5 w-max mx-auto projects-containers">
+            <div id="web-dev-projects-container" data-reveal-id="1" class="grid grid-cols-1 sm:grid-cols-3 gap-5 w-max mx-auto projects-containers">
                 <div class="portfolio-projects-container image-hover">
                     <a href="https://github.com/MarkSchae/TypingGame.git" target="_blank">
                         <img class="w-30 h-25 sm:w-40 sm:h-auto" src="./src/images/typing-game.png" alt="Typing game screenshot">
@@ -324,7 +410,7 @@
                 <!-- Navbar in a column style -->
                 <nav class="flex flex-col justify-center items-center gap-6">
                     <a class="image-hover" href="#home"><div>Home</div></a>
-                    <a class="hidden image-hover" href="#about-me-page"><div>About Me</div></a>
+                    <a class="image-hover" href="#about-me-page"><div>About Me</div></a>
                     <a class="image-hover" href="#resume-page"><div>Resume</div></a>
                     <a class="image-hover" href="#portfolio-page"><div>Portfolio</div></a>
                     <a class="hidden image-hover" href="#"><div>Testimonials</div></a>

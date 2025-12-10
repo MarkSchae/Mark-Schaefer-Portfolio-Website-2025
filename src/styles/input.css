@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .section-card {
-  @apply min-h-screen max-h-screen p-8 bg-[#14213D] border-2 border-[#CCC9DC] rounded-2xl shadow-2xl shadow-black;
+  @apply p-8 bg-[#14213D] border-2 border-[#CCC9DC] rounded-2xl shadow-2xl shadow-black;
 }
 
 .body-setup {
@@ -18,7 +18,7 @@
 
 .image-hover {
   @apply transition-transform duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:shadow-black
-         hover:-translate-y-1;
+         hover:-translate-y-1 hover:cursor-pointer;
 }
 
 .portfolio-projects-container {
@@ -31,8 +31,56 @@
 
 .art-images {
   @apply rounded-full overflow-hidden transition-transform duration-300 ease-out transform hover:scale-200 hover:shadow-2xl hover:shadow-black
-         hover:-translate-y-1;
+          hover:-translate-y-1;
 }
+
+.text-card {
+  @apply bg-[#0C1821] shadow-lg shadow-black rounded-2xl p-2
+          text-[#CCC9DC] text-[18px] leading-normal;
+  /* Limit text to ~8 words per line */
+  max-inline-size: 20ch; /* roughly 8 words depending on font */
+}
+
+.text-card-p:hover, .journey-feet {
+  @apply pointer-events-none;
+}
+/* .text-card:hover .journey-feet {
+  @apply hidden;
+}
+ */
+.text-card:hover .text-card-p {
+  @apply line-clamp-none z-50;
+  max-inline-size: 80ch;
+}
+
+.text-card:hover .journey-feet {
+  @apply hidden;
+}
+
+.text-card:hover {
+  @apply line-clamp-none z-50 p-6 text-2xl shadow-2xl shadow-black -translate-y-1 cursor-pointer;
+  max-inline-size: 80ch;
+}
+
+.card-active {
+    @apply line-clamp-none z-50 p-6 text-2xl shadow-2xl shadow-black -translate-y-1 cursor-pointer;
+  max-inline-size: 80ch;
+}
+
+.text-active {
+    @apply line-clamp-none z-50;
+  max-inline-size: 80ch;
+}
+
+/* .text-card-active {
+  @apply line-clamp-none z-50 p-6 text-2xl shadow-2xl shadow-black -translate-y-1 cursor-pointer;
+  max-inline-size: 80ch;
+}
+
+.text-card-active .journey-feet {
+  @apply hidden;
+} */
+
 
 /* Webkit is a engine specific experimental apply call */
 /* Width of the scrollbar */
