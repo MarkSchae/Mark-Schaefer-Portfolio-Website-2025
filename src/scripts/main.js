@@ -14,6 +14,12 @@ const experienceResumeContainers = document.querySelectorAll('.experience-resume
 // Also must do a experience/education toggle
 // Need to add at least 2 project links etc
 
+const typingGameLiveDemoBtn = document.getElementById('typing-game-live-demo-btn');
+typingGameLiveDemoBtn.addEventListener('click', tempLiveDemoLink);
+
+function tempLiveDemoLink () {
+    alert('So sorry but the deployment of this demo is no longer through Railway, I am working on a new deployment pathway. Please refer to the deployment branch of this project in my github, thank you.');
+}
 
 // Reveal span elements for more information and hide other elements for space
 // Function to reveal the div adjacent to the span that was clicked and hide the others(toggle)
